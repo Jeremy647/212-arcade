@@ -15,7 +15,36 @@
 
     <div id="container">
 
+      <h1>HIGH SCORES - PACMAN</h1>
+
+    <div id="chart">
+
     </div>
+
+    <table id="highscores">
+      <tr>
+        <th>[NAME]</th>
+        <th>[DATE]</th>
+        <th>[SCORE]</th>
+      </tr>
+    </table>
+
+    <h1>ADD SCORE</h1>
+
+    <form id="addscore">
+      ╔════════════════╗<br />
+      ║ NAME:&nbsp; <input id="name"  type="text" placeholder="..............." /> ║<br />
+      ║ DATE:&nbsp; <input id="date"  type="text" placeholder="YYYY-MM-DD....." /> ║<br />
+      ║ SCORE:      <input id="score" type="text" placeholder="..............." /> ║<br />
+      ╚════════════════╝<br />
+      <a>SUBMIT-&gt;</a>
+      <span class="alert"></span>
+    </form>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js.js') }}"></script>
+
   </body>
 
 </html>
